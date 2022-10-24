@@ -20,6 +20,15 @@ bash -c "$(wget -O - https://TylerMS887.github.io/install-xploitable)"
 `https://TylerMS887.github.io/install-xploitable` is the script downloaded from my GitHub
 Pages website.
 
+An AppImage for Xploitable cannot be provided to prevent conflicts with the `ace` image
+launcher, and that AppImages can bypass some organisation rules.
+
+A Snap or Flatpak cannot be provided because they are sandboxed, and the kernel cannot be
+accessed by sandboxed packages.
+
+A package for AUR may be released by someone in the kernel community. Possibly the same
+for a PPA (Debian/Ubuntu/Kali/KDE Neon/etc.) and a Copr repository (Red Hat/Fedora/etc.).
+
 ## Built-In Modules
 
 * Boot `initramfs` from GRUB: Adds `noinit` kernel option to disable the current init system
