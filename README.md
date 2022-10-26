@@ -46,4 +46,4 @@ for a PPA (Debian/Ubuntu/Kali/KDE Neon/etc.) and a Copr repository (Red Hat/Fedo
 * `systemd` for `initramfs`: Provides services like backlights during boot. After running `systemd`
   services, an extra service executes in order to run the usual system.
 
-* Panic GUI: Show a more graphical error screen when a kernel panic is encountered.
+* Panic GUI: Show a more graphical error screen with auto-restart when a kernel panic is encountered.
