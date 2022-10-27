@@ -21,7 +21,8 @@ bash -c "$(wget -O - https://TylerMS887.github.io/install-xploitable)"
 Pages website.
 
 An AppImage for Xploitable cannot be provided to prevent conflicts with the `ace` image
-launcher, and that AppImages can bypass some organisation rules.
+launcher (because the installer could be installed by `ace`), and that AppImages can bypass
+some organisation rules.
 
 A Snap or Flatpak cannot be provided because they are sandboxed, and the kernel cannot be
 accessed by sandboxed packages.
