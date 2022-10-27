@@ -1,0 +1,11 @@
+[Unit]
+Description=Install Xploitable
+After=getty@tty2.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/xploitable/install
+StandardInput=tty
+TTYPath=/dev/tty2
+TTYReset=yes
+TTYVHangup=yes
