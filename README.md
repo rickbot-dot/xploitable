@@ -22,8 +22,8 @@ An AppImage for Xploitable cannot be provided to prevent conflicts with AppImage
 organisation rules.
 
 A Snap or Flatpak cannot be provided because they are sandboxed, and the system's kernel cannot
-be accessed by sandboxed packages, as there is no Snap connection or FLatpak symlink that works
-with.
+be accessed by sandboxed packages, as there is no Snap connection that offers the kernel, and Flatpak
+does not seem to have permissions to access package-defined folders.
 
 A package for AUR may be released by someone in the kernel community. Possibly the same
 for a PPA (Debian/Ubuntu/Kali/KDE Neon/etc.) and a Copr repository (Red Hat/Fedora/etc.).
