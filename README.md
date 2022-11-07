@@ -1,8 +1,5 @@
 Xploitable modifies your Linux kernel.
 
-If you thought it was impossible, it's actually easy! Pull up your terminal,
-download an Xploitable modification, and open it.
-
 ## Warning!
 
 Xploitable does not take care of the kernel. After installing a modification,
@@ -20,12 +17,13 @@ bash -c "$(wget -O - https://TylerMS887.github.io/install-xploitable)"
 `https://TylerMS887.github.io/install-xploitable` is the script downloaded from my GitHub
 Pages website.
 
-An AppImage for Xploitable cannot be provided to prevent conflicts with the `ace` image
-launcher (because the installer could be installed by `ace`), and that AppImages can bypass
-some organisation rules.
+An AppImage for Xploitable cannot be provided to prevent conflicts with AppImageLauncher
+(because the installer could be installed), and that AppImages can bypass some
+organisation rules.
 
-A Snap or Flatpak cannot be provided because they are sandboxed, and the kernel cannot be
-accessed by sandboxed packages.
+A Snap or Flatpak cannot be provided because they are sandboxed, and the system's kernel cannot
+be accessed by sandboxed packages, as there is no Snap connection or FLatpak symlink that works
+with.
 
 A package for AUR may be released by someone in the kernel community. Possibly the same
 for a PPA (Debian/Ubuntu/Kali/KDE Neon/etc.) and a Copr repository (Red Hat/Fedora/etc.).
