@@ -30,8 +30,10 @@ Debian-based and Fedora systems.
 ## Usage
 
 ```
-xploitable command [-v/--verbose] [-c/--confirm] [...]
+xploitable command [-v/--verbose] [-y/--yes/--confirm] [--summary] [...]
 ```
+
+The options are described at the [wiki](https://github.com/TylerMS887/xploitable/wiki).
 
 > **Warning**: To prevent theft, and keep you safe from hackers, PolicyKit will be triggered
   if you attempt to run Xploitable without root privileges. Either use your password for running
@@ -43,11 +45,12 @@ xploitable command [-v/--verbose] [-c/--confirm] [...]
   ```
   PolicyKit could not be found. To keep you safe, Xploitable has cancelled the operation.
   
-  If you are sure, run this command as root, ideally using sudo. If you are in an organization, ask your administrator to run this command.
+  If you are sure, run this command as root, ideally using sudo.
+  If you are in an organization, ask your administrator to run this command.
   Tell them the command.
   
   Command you typed (for reference purpose):
-  xploitable subcommand options
+  xploitable command [options]
   ```
 
 ## Built-ins
