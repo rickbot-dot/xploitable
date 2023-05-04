@@ -51,6 +51,8 @@ The options are described at the [wiki](https://github.com/TylerMS887/xploitable
   
   Command you typed (for reference purpose):
   xploitable command [options]
+  
+  MAY THE FORCE BE WITH YOU.
   ```
 
 ## Built-ins
