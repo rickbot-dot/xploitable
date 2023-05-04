@@ -1,11 +1,11 @@
 [Unit]
-Description=Install Xploitable
+Description=Install Xploitable System (tty4)
 After=getty@tty2.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/lib/xploitable/install
+ExecStart=/usr/lib/xploitable/setup-xploitable/install-xploitable
 StandardInput=tty
-TTYPath=/dev/tty2
+TTYPath=/dev/tty4
 TTYReset=yes
 TTYVHangup=yes
