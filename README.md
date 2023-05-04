@@ -8,6 +8,11 @@ installing a module, it is possible something is different, that your warranty
 is now void (if your PC came with a Linux-based OS), and you are attempting security
 loss. If you are worried about a bricked system, do not install Xploitable. **May the force be with you.**
 
+## Support
+
+Xploitable, like Magisk, is systemless. While the modules are loading, the system boot will be paused.
+Xploitable errors will be logged in the boot console and `/usr/lib/xploitable/log.txt`.
+
 ## Install
 
 ```bash
