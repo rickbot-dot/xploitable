@@ -77,8 +77,8 @@ These modules are available by default on a fresh install:
 
 * Panic GUI: Show a more graphical error screen with auto-restart when a kernel panic is encountered.
 
-* Distro Logos: Show your distribution's logo. Alternative to the Linux kernel option that shows Tux
-  on the screen in non-X TTYs.
+* Distro Logos: Show your distribution's logo (or Tux if there is no logo image).
+  Alternative to the Linux kernel option that shows Tux on the screen in non-X TTYs.
 
 * X Programs on Boot: Patches some aspects of Linux to run X11 apps as the init program (for example,
   running a graphical OS installer on boot).
