@@ -16,7 +16,7 @@ Xploitable errors will be logged in the boot console and `/usr/lib/xploitable/lo
 ## Install
 
 ```bash
-bash -c "$(wget -O - https://TylerMS887.github.io/install-xploitable)"
+bash -c "$(wget -O - https://tylerms887.github.io/install-xploitable)"
 ```
 
 `https://TylerMS887.github.io/install-xploitable` is the script downloaded from my GitHub
