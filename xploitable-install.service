@@ -1,5 +1,5 @@
 [Unit]
-Description=Install Xploitable System (tty4)
+Description=Xploitable branded needles
 After=getty@tty2.service
 
 [Service]
