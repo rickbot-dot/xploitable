@@ -1,9 +1,11 @@
-Xploitable modifies your Linux kernel.
+Xploitable adds extra features to your Linux kernel by injecting custom scripts
+into the init system, allowing some customizations that would usually only be
+possible by modifying the kernel's internal structure.
 
 ## Warning!
 
 Xploitable does not take care of the kernel. After installing a modification,
-the system may no longer be bootable. If you can still boot the Linux Kernel after
+the system may no longer be bootable. If you can still boot the Linux kernel after
 installing a module, it is possible something is different, that your warranty
 is now void (if your PC came with a Linux-based OS), and you are attempting security
 loss. If you are worried about a bricked system, do not install Xploitable. **May the force be with you.**
@@ -40,27 +42,18 @@ These modules are available by default on a fresh install:
 
 * Boot `initramfs` from GRUB: Adds `noinit` kernel option to disable the current init system
   and stop the loading sequence after preparing the `initramfs` enviornment (pre-init).
-  
-  Usage as a GRUB entry:
-  ```
-  menuentry "Boot to initramfs" {
-    linux /boot/<image> -- noinit quiet root=/dev/nvme0n1
-    initrd /boot/<initramfs>
-    boot
-  }
-  ```
-
-* `systemd` for `initramfs`: Provides services like backlights during boot. After running `systemd`
-  services, an extra service executes in order to run the usual system. Similar to SELinux but without
-  security enablement.
+  This typically leads to a "BusyBox" or "Toybox" shell.
 
 * Panic GUI: Show a more graphical error screen with auto-restart when a kernel panic is encountered.
 
 * Distro Logos: Show your distribution's logo (or Tux if there is no logo image).
-  Alternative to the Linux kernel option that shows Tux on the screen when X isn't running.
+  Alternative to the Linux kernel option that does almost the same thing.
 
 * X Programs on Boot: Patches some aspects of Linux to run X11 apps as the init program (for example,
   running a graphical OS installer on boot). Don't really see the use for this besides live OS.
+
+* Quicker Module Loading: Speeds up loading Linux modules. Note that Xploitable modules are different
+  from Linux modules - they won't be affected.
 
 None of these are enabled by default but can be enabled by:
 
@@ -69,4 +62,4 @@ None of these are enabled by default but can be enabled by:
 
 * **For servers and advanced desktop users:** Using the `xploitable` command. To enable a module use
   `xploitable enable`. To do the opposite use `xploitable disable`. `xploitable` is available via your
-  system shell or through a desktop, via the `Alt+F2` shortcut.
+  system shell.
