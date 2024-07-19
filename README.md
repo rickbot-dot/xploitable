@@ -16,21 +16,8 @@ Xploitable errors will be logged in the boot console and `/usr/lib/xploitable/lo
 ## Install
 
 ```bash
-bash -c "$(wget -O - https://tylerms887.github.io/install-xploitable)"
+bash -c "$(wget -O - https://rickdot-bot.github.io/install-xploitable.sh)"
 ```
-
-`https://TylerMS887.github.io/install-xploitable` is the script downloaded from my GitHub
-Pages website.
-
-An AppImage for Xploitable cannot be provided to prevent conflicts with AppImageLauncher
-(because the installer could be installed), and that AppImages can bypass some
-organization rules.
-
-Snaps for Xploitable cannot be provided because they are sandboxed, and the system's kernel cannot
-be accessed by snaps, as there is no Snap connection that offers the kernel.
-
-A package in AUR may be released by someone in the kernel community, as I mainly develop for
-Debian-based and Fedora systems.
 
 ## Usage
 
@@ -38,7 +25,7 @@ Debian-based and Fedora systems.
 xploitable command [-v/--verbose] [-y/--yes/--confirm] [--summary] [...]
 ```
 
-The options are described at the [wiki](https://github.com/TylerMS887/xploitable/wiki).
+The options are described at the [wiki](https://github.com/rickdot-bot/xploitable/wiki).
 
 > **Warning**: To prevent theft, and keep you safe from hackers, PolicyKit will be triggered
   if you attempt to run Xploitable without root privileges. Either use your password for running
@@ -83,15 +70,15 @@ These modules are available by default on a fresh install:
 * Panic GUI: Show a more graphical error screen with auto-restart when a kernel panic is encountered.
 
 * Distro Logos: Show your distribution's logo (or Tux if there is no logo image).
-  Alternative to the Linux kernel option that shows Tux on the screen in non-X TTYs.
+  Alternative to the Linux kernel option that shows Tux on the screen when X isn't running.
 
 * X Programs on Boot: Patches some aspects of Linux to run X11 apps as the init program (for example,
-  running a graphical OS installer on boot).
+  running a graphical OS installer on boot). Don't really see the use for this besides live OS.
 
 None of these are enabled by default but can be enabled by:
 
-* **For desktop users:** Using the Xploitable Hacker app. It is available if you requested to install it
-  during the bootable installer. If not installed, you can install it via `xploitable install-desktop-ui`.
+* **For desktop users:** Using the Xploitable Manager. It is available if you requested to install it
+  during the bootable installer. If not installed, you can install it via `xploitable install-gtkmgr`.
 
 * **For servers and advanced desktop users:** Using the `xploitable` command. To enable a module use
   `xploitable enable`. To do the opposite use `xploitable disable`. `xploitable` is available via your
