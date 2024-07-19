@@ -32,20 +32,7 @@ The options are described at the [wiki](https://github.com/rickdot-bot/xploitabl
   Xploitable tools or login with the password for `root`.
   
   The `xploitable` command, without root privileges, will not work if you do not have PolicyKit
-  installed. Else, you will get this error:
-  
-  ```
-  PolicyKit could not be found. To keep you safe, Xploitable has cancelled the operation.
-  
-  If you are sure, run this command as root, ideally using sudo.
-  If you are in an organization, ask your administrator to run this command.
-  Tell them the command.
-  
-  Command you typed (for reference purpose):
-  xploitable command [options]
-  
-  MAY THE FORCE BE WITH YOU.
-  ```
+  installed.
 
 ## Built-ins
 
