@@ -1,5 +1,5 @@
 [Unit]
-Description=Xploitable branded needles
+Description=Xploitable Patcher
 After=getty@tty2.service
 
 [Service]
